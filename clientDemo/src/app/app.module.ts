@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { CDHeaderComponent } from './cdheader/cdheader.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
+import { CdBodyComponent } from './cd-body/cd-body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CDHeaderComponent
+    CDHeaderComponent,
+    CdBodyComponent
   ],
   imports: [
     BrowserModule,
