@@ -1,0 +1,17 @@
+:host >>> .p-tabview .p-tabview-nav-link .p-tabview-title {
+    color: #6b7682;
+    font-weight: 400;
+}
+
+:host >>> .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-color: #188627;
+    color: #188627;
+}
+
+:host >>> .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link .p-tabview-title{
+    color: #188627;
+}
+
+:host >>> .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}

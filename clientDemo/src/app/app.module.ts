@@ -6,18 +6,24 @@ import { CDHeaderComponent } from './cdheader/cdheader.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { CdBodyComponent } from './cd-body/cd-body.component';
+import { NavtabComponent } from './navtab/navtab.component';
+import { TabViewModule } from 'primeng/tabview';
+import { MlrtHeaderComponent } from './mlrt-header/mlrt-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CDHeaderComponent,
-    CdBodyComponent
+    CdBodyComponent,
+    NavtabComponent,
+    MlrtHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
