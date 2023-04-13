@@ -1,4 +1,74 @@
-<div class="header">
-This section contians header
+<div class="headGradient">
+    <div class="container">
+        <div class="grid ">
+            <div class="xl:col-7 lg:col-7 md:col-6 col-12">
+                <h4 style="margin-bottom:10px;">
+                    <span class="contract">Contract</span> 
+                    E50777 - Accountable Care Coalition
+                </h4>
+            
+                <div class="flex justify-content-start align-items-start">
+                    <div class="flex align-items-start justify-content-center headIcon">
+                        <i class="pi pi-check-circle headIcon"></i><span class="ml-1 mr-3">Active</span>
+                    </div>
+                    <div class="flex align-items-start justify-content-center headIcon">
+                        <i class="pi pi-th-large headIcon"></i><span class="ml-1 mr-3">Shared Savings/Risk</span>
+                    </div>
+                    <div class="flex align-items-start justify-content-center headIcon">
+                        <i class="pi pi-briefcase headIcon"></i><span class="ml-1 mr-3">LOB:Medicare</span>
+                    </div>
+                    <div class="flex align-items-start justify-content-center headIcon">
+                        <i class="pi pi-clock headIcon"></i> <span class="ml-1 mr-3">03 Mar 2022 6:56 PM</span> 
+                    </div>
+                </div>
+            
+                <h5 class="measurePeriodSpan">Measurement Period</h5>
+                <p-toast></p-toast>
+                <p-progressBar [value]="50"></p-progressBar>
+                   
+               
+                
+            </div>
+    
+    <div class="xl:col-5 lg:col-5 md:col-5 col-12 mt-4">
+        <div class="flex justify-content-end flex-wrap">
+            <div class="flex align-items-start">
+                <i class="pi pi-file-pdf cornerIcons"></i>
+            </div>
+            <div class="flex align-items-start">
+                <i class="pi pi-bell cornerIcons" ></i>
+            </div>
+            <div class="flex align-items-start">
+                <i class="pi pi-times cornerIcons"></i>
+            </div>
+        </div>
 
+
+<div class="card">
+    <p-splitter [style]="{ height: '60px' }" styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center flexDirCol" style="border-bottom: 3px solid green;">
+                <h4 class="cardTab">$13,208,801 
+                    <span class="pi pi-arrow-up headIcon"> 3.81%</span> 
+                </h4>
+                    <span class="pmpTab">Payment</span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center flexDirCol" style="border-bottom: 3px solid blue;">
+                <h4 class="cardTab">2,378 
+                    <span class="pi pi-arrow-up headIcon"> 5.74%</span> 
+                </h4>
+                <span class="pmpTab">Members</span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center flexDirCol" style="border-bottom: 3px solid yellow  ;">
+                <h4 class="cardTab">154
+                    <span class="pi pi-arrow-up headIcon"> 2.84%</span> 
+                </h4>
+                <span class="pmpTab">Providers</span>
+            </div>
+        </ng-template>
+    </p-splitter>
 </div>

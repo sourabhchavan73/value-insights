@@ -1,0 +1,16 @@
+
+.categoryTh{
+    font-size: 12px;
+    background: #fff !important;
+    border: #fff !important;
+    /* text-align: center !important; */
+}
+
+.catergoryTd{
+    font-size: 12px;
+    color: gray;
+}
+
+.lookbacKPerTd{
+    font-size: 10px;
+}

@@ -1,3 +1,88 @@
+.container { 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 767px) { .container { max-width: 100%; } }
+@media only screen and (min-width: 768px) { .container { max-width: 740px; } }
+@media only screen and (min-width: 992px) { .container { max-width: 980px; } }
+@media only screen and (min-width: 1200px) { .container { max-width: 1330px; } }
+@media only screen and (min-width: 1400px) { .container { max-width: 1550px; } }
+
+.headIcon{
+    font-size: 10px; 
+    color: #606d7a;
+}
+
+.cardTab {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.headGradient{
+    background: #D6FDD6;
+    background: linear-gradient(to bottom, #D6FDD6 0%, #FFFFFF 55%);
+}
+
+.contract{
+    color: #007d00;
+    padding-right: 10px;
+}
+
+.measurePeriodSpan{
+    color: #007d00;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+
+/* progress bar */
+::ng-deep .p-progressbar .p-progressbar-value {
+    width: 0%;
+    background: repeating-linear-gradient(to right, green, green 27px, 
+  transparent 27px, transparent 30px);
+}
+
+::ng-deep .p-progressbar {
+    width: 50%;
+    height: 10px;
+    background: repeating-linear-gradient(to right, grey, grey 27px, 
+  transparent 27px, transparent 30px);
+  border-radius: 0px;
+}
+
+::ng-deep .p-progressbar .p-progressbar-label {
+    visibility: hidden;
+}
+
+.cornerIcons{
+    color: #007d00;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+::ng-deep .p-splitter {
+    border: 1px solid #d2d2d2;
+    background: #ffffff;
+    border-radius: 0px;
+    color: #495057;
+    margin-top: 20px;
+}
+
+.flexDirCol{
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.pmpTab{
+    font-size: 12px;
+    color: #999999;
+    margin-top: 5px;
+}
+
 .header{
     padding:10px;
     height: 100px;

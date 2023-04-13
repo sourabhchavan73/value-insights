@@ -1,0 +1,26 @@
+  [
+            {
+                "id": "1",
+                "category": "Retro Add",
+                "lookbackPeriod": "8 Months",
+                "common": ""
+            },
+            {
+                "id": "2",
+                "category": "Retro Cancel",
+                "lookbackPeriod": "2 Months",
+                "common": " "
+            },
+            {
+                "id": "3",
+                "category": "Category 1",
+                "lookbackPeriod": "N / A",
+                "common": " "
+            },
+            {
+                "id": "4",
+                "category": "Category 2",
+                "lookbackPeriod": "N / A",
+                "common": " "
+            }
+        ]
