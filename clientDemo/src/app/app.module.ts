@@ -9,6 +9,11 @@ import { DividerModule } from "primeng/divider";
 import { ContacDetailsMCTComponent } from './contac-details-mct/contac-details-mct.component';
 import { TabViewModule } from 'primeng/tabview';
 import { CardModule } from 'primeng/card';
+import { ProgressBarModule } from 'primeng/progressbar';
+// For dynamic progressbar demo
+import { ToastModule } from 'primeng/toast';
+
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [
@@ -19,11 +24,14 @@ import { CardModule } from 'primeng/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProgressBarModule,
+    ToastModule,
     BrowserAnimationsModule,
     CardModule,
     ButtonModule,
     TabViewModule,
-    DividerModule
+    DividerModule,
+    SplitterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
