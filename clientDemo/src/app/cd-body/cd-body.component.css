@@ -1,0 +1,91 @@
+
+::ng-deep :root {
+    --gray: #2f2f2f;
+    --white: #ffffff;
+    --black: #000000;
+    --icon-primary-color: #c1c9d1;
+    --tag-bg: #ecedef
+}
+
+.content {
+    color: var(--gray);
+    font-size: 0.9em;
+    line-height: 1.44;
+}
+
+.title {
+    color: var(--black);
+    font-size: 1em;
+}
+
+.cd-info-tables th {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #577b94;
+    text-align: left;
+}
+
+.cd-info-tables td {
+    font-size: 0.9em;
+}
+
+.fixed-spacing tr{
+    line-height: 1.8em;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    display: flex;
+    justify-content: center;
+    padding: 1.5px 10px;
+    border: 2px solid #d4dde3;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.tags-wrapper .tag:not(:first-child){
+    margin-left: 5px;
+}
+
+.tag-title{
+    color: #606d7a;
+}
+
+.label{
+    color: #577b94;
+}
+
+.payment-stream-wrapper{
+    border: 1px solid #dce2e7;
+}
+
+.payment-stream-wrapper  tr:not(:last-child) th , .payment-stream-wrapper  tr:not(:last-child) td {
+    border-bottom: 1.5px solid #dce2e7;
+}
+
+.payment-stream-wrapper tr {
+    line-height: 3em;
+}
+
+.payment-stream-wrapper th, .payment-stream-wrapper td {
+    padding: 0 20px;
+}
+
+.payment-stream-wrapper  td {
+   text-align: right;
+}
+
+.payment-stream-wrapper h3{
+    padding: 20px 20px 0 20px;
+    margin-bottom: 1em;
+}
+
+.payment-stream-wrapper tr td span:not(:first-child){
+    margin-left: 1rem;
+}
+
+.payment-stream-wrapper th{
+    color: #212121;
+    font-weight: 400;
+    font-size: 0.95em;
+}
