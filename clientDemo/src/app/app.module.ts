@@ -14,26 +14,34 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 
 import { SplitterModule } from 'primeng/splitter';
+import { PaymentStreamMlrtComponent } from './payment-stream-mlrt/payment-stream-mlrt.component';
+import { TableModule } from 'primeng/table';
+import { ProductServiceService } from './services/product-service.service';
+import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CDHeaderComponent,
-    ContacDetailsMCTComponent
+    ContacDetailsMCTComponent,
+    PaymentStreamMlrtComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProgressBarModule,
     ToastModule,
+    TableModule,
     BrowserAnimationsModule,
     CardModule,
     ButtonModule,
     TabViewModule,
     DividerModule,
-    SplitterModule
+    SplitterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
