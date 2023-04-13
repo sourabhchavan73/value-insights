@@ -1,0 +1,17 @@
+.detail-lebel{
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
+}
+
+tr th {
+    font-size: 10px;
+}
+
+tr td {
+    font-size: 10px;
+}
+
+.link{
+    color: blue;
+}

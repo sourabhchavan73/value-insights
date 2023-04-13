@@ -1,0 +1,18 @@
+.trend-lebel {
+    font-weight: bold;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.trend-chart {
+    min-height: 200px;
+    /* width: 95%; */
+    align-items: center;
+    padding: 20px;
+    border: 2px solid grey;
+}
+
+::p-chart div canvas{
+    /*   */
+    height:200px !important;
+}
