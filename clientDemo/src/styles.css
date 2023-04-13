@@ -27,3 +27,37 @@
 @media only screen and (min-width: 992px) { .container { max-width: 980px; } }
 @media only screen and (min-width: 1200px) { .container { max-width: 1140px; } }
 @media only screen and (min-width: 1400px) { .container { max-width: 1550px; } }
+
+@import "/node_modules/primeflex/primeflex.css";
+
+
+
+.p-tabview-title {
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: #ffffff;
+    border-color: #007d00 !important;
+    color: #007d00 !important;
+}
+
+.p-tabview .p-tabview-panels {
+    background: #ffffff;
+    padding: 1.25rem;
+    border: 0 none;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.p-card .p-card-title {
+    font-size: 18px !important;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
