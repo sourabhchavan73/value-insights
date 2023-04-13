@@ -27,7 +27,7 @@ import { NavtabComponent } from './navtab/navtab.component';
     AppComponent,
     CDHeaderComponent,
     CdBodyComponent,
-    NavtabComponent,,
+    NavtabComponent,
     ContacDetailsMCTComponent,
     PaymentStreamMlrtComponent
   ],
