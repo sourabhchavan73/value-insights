@@ -24,3 +24,38 @@
 @media only screen and (min-width: 992px) { .container { max-width: 980px; } }
 @media only screen and (min-width: 1200px) { .container { max-width: 1140px; } }
 @media only screen and (min-width: 1400px) { .container { max-width: 1550px; } }
+
+.table-primary{
+    text-align: left;
+}
+
+.table-primary tr{
+    line-height: 2.33;
+}
+.table-primary th {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #577b94;
+    text-align: left;
+}
+
+.table-primary td{
+    font-size: 0.9em;
+}
+
+.table-label{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #577b94;
+    text-align: left;
+}
+
+.table-value{
+    font-size: 0.9em;
+    color: #000;
+}
+
+.headers{
+    font-size: 1.5em;
+    font-weight: 400;
+}
