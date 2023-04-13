@@ -30,7 +30,15 @@ import { NavtabComponent } from './navtab/navtab.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CDHeaderComponent
+    CDHeaderComponent,
+    NavtabComponent,
+    CdBodyComponent,
+    DetailsComponent,
+    TrendComponent,
+    SettlementsComponent,
+    PaymentStreamMlrtComponent,
+    ContacDetailsMCTComponent
+
   ],
   imports: [
     BrowserModule,
@@ -47,7 +55,7 @@ import { NavtabComponent } from './navtab/navtab.component';
     ToastModule,
     TabViewModule,
     ChartModule,
-    TableModule
+    TableModule,
   ],
   providers: [ProductServiceService],
   bootstrap: [AppComponent]
