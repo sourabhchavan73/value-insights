@@ -25,6 +25,7 @@ import { ProductServiceService } from './services/product-service.service';
 import { HttpClientModule } from '@angular/common/http'
 import { CdBodyComponent } from './cd-body/cd-body.component';
 import { NavtabComponent } from './navtab/navtab.component';
+import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { NavtabComponent } from './navtab/navtab.component';
     TrendComponent,
     SettlementsComponent,
     PaymentStreamMlrtComponent,
-    ContacDetailsMCTComponent
+    ContacDetailsMCTComponent,
+    SDCalcComponent
 
   ],
   imports: [
