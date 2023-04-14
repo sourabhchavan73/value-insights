@@ -11,6 +11,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { MlrtHeaderComponent } from './mlrt-header/mlrt-header.component';
 import { PaymentstreamTabsComponent } from './paymentstream-tabs/paymentstream-tabs.component';
 import { PaymentstreamRulesComponent } from './paymentstream-rules/paymentstream-rules.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PaymentstreamRulesComponent } from './paymentstream-rules/paymentstream
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    TabViewModule
+    TabViewModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

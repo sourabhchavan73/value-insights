@@ -1,8 +1,7 @@
 .PS-container{
-    padding: 15px 50px;
     margin-bottom: 2em;
     background-image: linear-gradient(#ebffeb, #fafff9);
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 h1 {
@@ -30,8 +29,4 @@ th {
 
 td{
     font-size: 0.9em;
-}
-
-.container{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
