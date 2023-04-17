@@ -1,0 +1,25 @@
+.highlights{
+    color: #1f71ce;
+    text-align: center!important;
+}
+
+th, td {
+    font-size: 0.9em;
+}
+
+:host >>> .p-datatable .p-datatable-thead > tr > th {
+    color: #4d6688;
+    font-weight: 600;
+    font-size: 0.85em;
+    background: #fff;
+}
+
+:host >>> .p-splitbutton	{
+    margin: 0;
+    border-radius: 0;
+}
+
+:host >>> button{
+    border: 0;
+    border-radius: 0;
+}

@@ -26,7 +26,10 @@ import { HttpClientModule } from '@angular/common/http'
 import { CdBodyComponent } from './cd-body/cd-body.component';
 import { NavtabComponent } from './navtab/navtab.component';
 import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
-
+import { SdqipProviderPageComponent } from './sdqip-provider-page/sdqip-provider-page.component';
+import { SdqipProviderTabsComponent } from './sdqip-provider-tabs/sdqip-provider-tabs.component';
+import { SdqipProviderSettlementdetailsComponent } from './sdqip-provider-settlementdetails/sdqip-provider-settlementdetails.component';
+import { SplitButtonModule } from 'primeng/splitbutton';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
     SettlementsComponent,
     PaymentStreamMlrtComponent,
     ContacDetailsMCTComponent,
-    SDCalcComponent
+    SDCalcComponent,
+    SdqipProviderPageComponent,
+    SdqipProviderTabsComponent,
+    SdqipProviderSettlementdetailsComponent
 
   ],
   imports: [
@@ -58,6 +64,7 @@ import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
     TabViewModule,
     ChartModule,
     TableModule,
+    SplitButtonModule
   ],
   providers: [ProductServiceService],
   bootstrap: [AppComponent]
