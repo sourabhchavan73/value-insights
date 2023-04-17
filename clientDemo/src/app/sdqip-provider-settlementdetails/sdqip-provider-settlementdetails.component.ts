@@ -11,6 +11,23 @@ import { Component } from '@angular/core';
 
 
 export class SdqipProviderSettlementdetailsComponent {
+  quarter = [
+    {
+        name: 'Feb 2022',
+        id:1
+    },
+    {
+        name: 'June 2022',
+        id:2
+    },
+    {
+      name: 'Nov 2022',
+      id:3
+    }
+];
+
+  selectedQuarter:any=[]
+
   types= [
     { name: 'Cancer', code: 'NY' },
     { name: 'Cough', code: 'RM' },
@@ -101,5 +118,47 @@ export class SdqipProviderSettlementdetailsComponent {
       // compliantMember: ,
       // nonComplianceMembers:
     },
+    {
+      id: '1000',
+      name: 'ROMERO,ALBERTO',
+      npi: '18990521197',
+      totalMember: 45,
+      eligibileMember: 50,
+      compliantMember: 50,
+      nonComplianceMembers: 60
+    },
+    {
+      id: '1000',
+      name: 'ROMERO,ALBERTO',
+      npi: '18990521197',
+      totalMember: 45,
+      eligibileMember: 50,
+      compliantMember: 50,
+      nonComplianceMembers: 60
+    },
   ]
+
+  handleNextQuarter(type:string){
+    const activeIndex = this.quarter.findIndex(i =>  i == this.selectedQuarter)
+    if(type === 'next'){
+      if(activeIndex+1 < this.quarter.length){
+        const newIndex = activeIndex + 1;
+        const newItem = this.quarter[newIndex];
+        console.log(newItem)
+        this.selectedQuarter = newItem
+      }
+    } else {
+      if(activeIndex - 1 >= 0){
+      console.log('coming hjete')
+
+        const newIndex = activeIndex - 1;
+        const newItem = this.quarter[newIndex];
+        console.log(newItem)
+        this.selectedQuarter = newItem
+      }
+    }
+
+  }
+
+
 }

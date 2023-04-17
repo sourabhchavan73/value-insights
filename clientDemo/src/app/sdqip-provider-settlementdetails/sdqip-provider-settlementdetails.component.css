@@ -56,13 +56,13 @@ input {
     flex: 2;
 }
 
-:host>>>.p-dropdown {
+:host>>>.filter-wrapper .p-dropdown {
     width: 100%;
     border-radius: .5;
     margin: 0;
 }
 
-:host>>>.p-dropdown .p-dropdown-label {
+:host>>>.filter-wrapper .p-dropdown .p-dropdown-label {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 0.9em;
@@ -72,7 +72,7 @@ input {
     content: "\f2c2" !important;
 }
 
-:host>>>.p-dropdown .pi {
+:host>>> .filter-wrapper .p-dropdown .pi {
     margin: 0;
 }
 
@@ -110,4 +110,38 @@ input {
 .date-info{
     color: #587c9c;
     font-size: 0.9em;
+}
+
+.controls{
+    height: 100%;
+    width: 2.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.quarters-wrapper .controls:first-child{
+    outline: 1px solid #78b982;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.quarters-wrapper .controls-2{
+    outline: 1px solid #78b982;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+:host>>>.quarters-wrapper .p-dropdown {
+    margin: 0;
+    border-radius: 0;
+    outline: 1px solid #78b982;
+    background-color: #f3f4f6;
+}
+
+:host>>>.quarters-wrapper .p-dropdown-label{
+    font-size: .9em;
 }
