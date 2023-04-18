@@ -61,3 +61,30 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
+.table-label{
+    font-size: 1em;
+    font-weight: 400;
+    color: #577b94;
+    text-align: left;
+}
+
+.table-value{
+    font-size: 0.99em;
+    color: #000;
+}
+
+.table-sub-labels{
+    color: #6b7682;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.headers{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+:host >>> .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}

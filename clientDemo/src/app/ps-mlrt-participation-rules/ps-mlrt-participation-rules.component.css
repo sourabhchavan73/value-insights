@@ -1,0 +1,46 @@
+.table-bordered th, .table-bordered td {
+    border-bottom: 1px solid #dce2e7;
+    border-collapse: collapse;
+}
+
+.sub-info-spacing th {
+    padding-left: 25px;
+}
+
+.table-bordered tr:first-child th, .table-bordered tr:first-child td {
+    border-top: 1px solid #dce2e7;
+    border-collapse: collapse;
+}
+
+.table-bordered th {
+    line-height: 3.5em;
+}
+
+td{
+    text-align: center;
+}
+
+.b-none{
+    border: 0!important;
+}
+
+.sub-info th{
+    line-height: 3em;
+}
+
+.bt-none{
+    border-top: none!important;
+}
+
+.sub-headers{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.shared-rules-table th{
+    width: 70%;
+}
+
+.shared-rules-table td{
+    text-align: center;
+}

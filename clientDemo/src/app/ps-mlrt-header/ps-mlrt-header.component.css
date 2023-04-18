@@ -1,0 +1,32 @@
+.PS-container{
+    margin-bottom: 2em;
+    background-image: linear-gradient(#ebffeb, #fafff9);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h1 span{
+    color: #188627;
+}
+
+table{
+    text-align: left;
+}
+
+tr{
+    line-height: 2.33;
+}
+th {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #577b94;
+    text-align: left;
+}
+
+td{
+    font-size: 0.9em;
+}
