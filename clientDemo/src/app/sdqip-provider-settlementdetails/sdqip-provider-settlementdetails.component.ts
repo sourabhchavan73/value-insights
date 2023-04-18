@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 
 
 export class SdqipProviderSettlementdetailsComponent {
+<<<<<<< HEAD
   quarter = [
     {
         name: 'Feb 2022',
@@ -28,6 +29,8 @@ export class SdqipProviderSettlementdetailsComponent {
 
   selectedQuarter:any=[]
 
+=======
+>>>>>>> 347fbb3 (provider ui)
   types= [
     { name: 'Cancer', code: 'NY' },
     { name: 'Cough', code: 'RM' },
