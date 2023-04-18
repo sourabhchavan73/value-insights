@@ -1,25 +1,108 @@
-.highlights{
+.highlights {
     color: #1f71ce;
-    text-align: center!important;
+    text-align: center !important;
 }
 
-th, td {
+th,
+td {
     font-size: 0.9em;
 }
 
-:host >>> .p-datatable .p-datatable-thead > tr > th {
+:host>>>.p-datatable .p-datatable-thead>tr>th {
     color: #4d6688;
     font-weight: 600;
     font-size: 0.85em;
     background: #fff;
 }
 
-:host >>> .p-splitbutton	{
+:host>>>.p-splitbutton {
     margin: 0;
     border-radius: 0;
 }
 
-:host >>> button{
+:host>>>button {
     border: 0;
     border-radius: 0;
+}
+
+:host>>>.p-datatable .p-datatable-header {
+    padding: 0;
+}
+
+input {
+    border: 1px solid #9babb9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+:host>>>.fa-id-card:before {
+    content: "\f2c2" !important;
+}
+
+.filter-wrapper div:first-child {
+    flex: 1;
+}
+
+.filter-wrapper div:nth-child(2) {
+    flex: 2;
+}
+
+.filter-wrapper div:nth-child(3) {
+    flex: 2;
+}
+
+:host>>>.p-dropdown {
+    width: 100%;
+    border-radius: .5;
+    margin: 0;
+}
+
+:host>>>.p-dropdown .p-dropdown-label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}   
+
+.fa-id-card:before {
+    content: "\f2c2" !important;
+}
+
+:host>>>.p-dropdown .pi {
+    margin: 0;
+}
+
+:host>>>.filter-input {
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 0.9em;
+}
+
+:-ms-input-placeholder {
+    font-size: 0.9em;
+}
+
+::-ms-input-placeholder {
+    font-size: 0.9em;
+}
+
+.filter-title{
+    color: #577b94;
+    font-weight: 400;
+}
+
+.filter-result-title{
+    color: #8498a8;
+    font-weight: 400;
+}
+
+.duration-wrapper{
+    background-color: #f3f4f6;
+    padding: 10px;
 }

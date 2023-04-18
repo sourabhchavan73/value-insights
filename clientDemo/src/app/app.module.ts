@@ -30,6 +30,10 @@ import { SdqipProviderPageComponent } from './sdqip-provider-page/sdqip-provider
 import { SdqipProviderTabsComponent } from './sdqip-provider-tabs/sdqip-provider-tabs.component';
 import { SdqipProviderSettlementdetailsComponent } from './sdqip-provider-settlementdetails/sdqip-provider-settlementdetails.component';
 import { SplitButtonModule } from 'primeng/splitbutton';
+import { InputTextModule } from 'primeng/inputtext';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -64,7 +68,10 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     TabViewModule,
     ChartModule,
     TableModule,
-    SplitButtonModule
+    SplitButtonModule,
+    InputTextModule,
+    DropdownModule,
+    FormsModule
   ],
   providers: [ProductServiceService],
   bootstrap: [AppComponent]

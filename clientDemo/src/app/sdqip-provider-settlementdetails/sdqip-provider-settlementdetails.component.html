@@ -1,11 +1,60 @@
-<div class="flex">
+<!-- <div class="flex">
     <p-button icon="pi pi-check"></p-button>
     <p-splitButton [model]="items" label="Primary" ></p-splitButton>
     <p-button icon="pi pi-check"></p-button>
+</div> -->
+
+
+<div class="duration-wrapper">
+    <div class="grid">
+        <div class="xl:col-6">
+            <!-- <p-splitButton label="Save" ></p-splitButton> -->
+        </div>
+        <div class="xl:col-6 flex justify-content-end">
+            <p class="filter-title">Round End Date <span class="text-color-secondary">15 Mar 2022</span> </p>
+            <p class="filter-title ml-3">Settlement Run Date <span class="text-color-secondary">16</span> </p>
+        </div>
+    </div>
 </div>
 
 <div>
     <p-table [value]="products" [tableStyle]="{ 'width': '100%' }">
+        <ng-template pTemplate="caption">
+            <div class="grid align-items-center px-3 py-2">
+                <div class="xl:col-4">
+                    <small class="filter-result-title">45 Provider Found!</small>
+                    <i class="pi pi-arrow-down ml-2"></i>
+                </div>
+
+                <div class="xl:col-6 xl:col-offset-2 py-0">
+                    <div class="filter-wrapper flex justify-content-end align-items-center">
+                        <div>
+                            <small class="filter-title">
+                                Filter by Measures
+                            </small>
+                        </div>
+                        <div class="w-full mx-2 my-0">
+                            <p-dropdown
+                                [options]="types"
+                                [(ngModel)]="selectedType"
+                                dropdownIcon="pi pi-book"
+                                class="w-full" 
+                                optionLabel="name">
+                            </p-dropdown>
+                        </div>
+                        <div class="m-0">
+                            <span class="p-input-icon-right w-full m-0">
+                                <i class="pi pi-search"></i>
+                                <input class="filter-input" type="text" pInputText placeholder="Find a Provider by TIN/NPI/LOC ID" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </ng-template>
+
         <ng-template pTemplate="header">
             <tr class="table-head">
                 <th>Provider Name</th>

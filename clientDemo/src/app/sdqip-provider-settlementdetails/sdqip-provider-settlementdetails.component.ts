@@ -1,11 +1,30 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-sdqip-provider-settlementdetails',
   templateUrl: './sdqip-provider-settlementdetails.component.html',
   styleUrls: ['./sdqip-provider-settlementdetails.component.css']
 })
+
+
+
 export class SdqipProviderSettlementdetailsComponent {
+  types= [
+    { name: 'Cancer', code: 'NY' },
+    { name: 'Cough', code: 'RM' },
+    { name: 'cancer screening - Medicare', code: 'LDN' },
+    { name: 'Cancer', code: 'NY' },
+    { name: 'Cough', code: 'RM' },
+    { name: 'cancer screening - Medicare', code: 'LDN' },
+    { name: 'Cancer', code: 'NY' },
+    { name: 'Cough', code: 'RM' },
+    { name: 'cancer screening - Medicare', code: 'LDN' },
+  ];
+
+  selectedType=[];
+
   items = [
     {
       label: 'Update',
@@ -18,7 +37,7 @@ export class SdqipProviderSettlementdetailsComponent {
   ];
 
 
-  products=[
+  products = [
     {
       id: '1000',
       name: 'ROMERO,ALBERTO',
@@ -26,7 +45,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
@@ -35,7 +54,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
@@ -44,7 +63,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
@@ -53,7 +72,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
@@ -62,7 +81,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
@@ -71,7 +90,7 @@ export class SdqipProviderSettlementdetailsComponent {
       totalMember: 45,
       eligibileMember: 50,
       compliantMember: 50,
-      nonComplianceMembers:60
+      nonComplianceMembers: 60
     },
     {
       id: '1000',
