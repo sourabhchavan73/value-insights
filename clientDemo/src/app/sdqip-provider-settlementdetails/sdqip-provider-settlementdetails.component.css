@@ -106,3 +106,8 @@ input {
     background-color: #f3f4f6;
     padding: 10px;
 }
+
+.date-info{
+    color: #587c9c;
+    font-size: 0.9em;
+}
