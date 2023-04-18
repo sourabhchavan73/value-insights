@@ -56,21 +56,13 @@ input {
     flex: 2;
 }
 
-<<<<<<< HEAD
-:host>>>.filter-wrapper .p-dropdown {
-=======
 :host>>>.p-dropdown {
->>>>>>> 347fbb3 (provider ui)
     width: 100%;
     border-radius: .5;
     margin: 0;
 }
 
-<<<<<<< HEAD
-:host>>>.filter-wrapper .p-dropdown .p-dropdown-label {
-=======
 :host>>>.p-dropdown .p-dropdown-label {
->>>>>>> 347fbb3 (provider ui)
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 0.9em;
@@ -80,11 +72,7 @@ input {
     content: "\f2c2" !important;
 }
 
-<<<<<<< HEAD
-:host>>> .filter-wrapper .p-dropdown .pi {
-=======
 :host>>>.p-dropdown .pi {
->>>>>>> 347fbb3 (provider ui)
     margin: 0;
 }
 
@@ -117,7 +105,6 @@ input {
 .duration-wrapper{
     background-color: #f3f4f6;
     padding: 10px;
-<<<<<<< HEAD
 }
 
 .date-info{
@@ -157,6 +144,5 @@ input {
 
 :host>>>.quarters-wrapper .p-dropdown-label{
     font-size: .9em;
-=======
->>>>>>> 347fbb3 (provider ui)
+
 }
