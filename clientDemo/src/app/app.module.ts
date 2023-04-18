@@ -25,6 +25,10 @@ import { ProductServiceService } from './services/product-service.service';
 import { HttpClientModule } from '@angular/common/http'
 import { CdBodyComponent } from './cd-body/cd-body.component';
 import { NavtabComponent } from './navtab/navtab.component';
+import { PsMlrtHeaderComponent } from './ps-mlrt-header/ps-mlrt-header.component';
+import { PsMlrtBodyComponent } from './ps-mlrt-body/ps-mlrt-body.component';
+import { PsMlrtPageComponent } from './ps-mlrt-page/ps-mlrt-page.component';
+import { PsMlrtParticipationRulesComponent } from './ps-mlrt-participation-rules/ps-mlrt-participation-rules.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { NavtabComponent } from './navtab/navtab.component';
     TrendComponent,
     SettlementsComponent,
     PaymentStreamMlrtComponent,
-    ContacDetailsMCTComponent
+    ContacDetailsMCTComponent,
+    PsMlrtHeaderComponent,
+    PsMlrtBodyComponent,
+    PsMlrtPageComponent,
+    PsMlrtParticipationRulesComponent
 
   ],
   imports: [
