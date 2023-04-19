@@ -1,0 +1,45 @@
+div.member-table *{
+    font-size: 10px;    
+}
+/* 
+div.member-table {
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+} */
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    text-align: left;
+    /* padding: 1rem 1rem; */
+    border: 1px solid #dee2e6;
+    border-width: 0 0 1px 0;
+    font-weight: 700;
+    color: #343a40;
+    background: #f8f9fa;
+    transition: box-shadow 0.2s;
+    font-size: 12px;
+}
+
+
+::ng-deep .p-datatable .p-datatable-tbody > tr > td {
+    text-align: left;
+    border: 1px solid #dee2e6;
+    border-width: 0 0 1px 0;
+    padding: 2px;
+    font-size: 10px;
+}
+
+::ng-deep p-columnFilter * {
+    margin-top: 0px;
+}
+
+::ng-deep .p-multiselect-label {
+    height: 10px;
+
+}
+
+::ng-deep div.p-multiselect-label {
+    padding: 0px;
+}
+
+
+

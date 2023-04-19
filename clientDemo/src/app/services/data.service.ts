@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Settlement } from './model/Settlement';
+import { Settlement } from '../model/Settlement';
 
 @Injectable({
   providedIn: 'root'

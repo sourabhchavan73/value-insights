@@ -1,0 +1,96 @@
+<div class="member-table">
+    <p-table
+        #members_dtl
+        [value]="members"
+        [paginator]="false"
+        [rows]="5"
+        [showCurrentPageReport]="true"
+        [rowsPerPageOptions]="[5, 10, 25, 50]"
+        [paginatorPosition]="'top'"
+        currentPageReportTemplate="{totalRecords} Members Found!"
+        [tableStyle]="{ 'min-width': '50rem',  'margin':'20px' }"
+        styleClass=" 'p-datatable-sm'"
+        [globalFilterFields]="['name']"
+        
+    >
+    <ng-template pTemplate="caption">
+        <div class="flex" style="height: 20px;">
+            <!-- Total Count  -->
+            <span>
+                {{members_dtl.totalRecords}} Members Found!
+            </span>
+            <!-- Download button -->
+            <span class="mr-2 ml-2"><i class="pi pi-arrow-down"  style="font-size: 1rem" (click)="exportExcel()" pTooltip="XLS" 
+            tooltipPosition="bottom"></i> </span>
+            <!--  Provider Name Search-->
+            <span class="mr-2 ml-2">Filter by Provider</span>
+            <p-columnFilter field="providerName" matchMode="in" [showMenu]="false">
+                <ng-template pTemplate="filter" let-value let-filter="filterCallback">                    
+                    <p-multiSelect [ngModel]="value" [options]="providers" placeholder="All Providers" 
+                        (onChange)="filter($event.value)" 
+                        optionLabel="name">
+                        <ng-template let-provider pTemplate="item">
+                            <div class="inline-block vertical-align-middle">
+                                <span class="ml-1 mt-1">{{ provider }}</span>
+                            </div>
+                        </ng-template>
+                    </p-multiSelect>
+                </ng-template>
+            </p-columnFilter>
+            <!-- Member Search -->
+            <span class="mr-2 ml-2">Find a member
+                <input pInputText type="text" (input)="members_dtl.filterGlobal($any($event).target.value, 'contains')"
+                placeholder="Search keyword" />
+                <!-- <input pInputText type="text" placeholder="Find a Member" 
+                        (input)="members_dtl.filter($any($event).target?.value, 'name', 'contains')" 
+                        [value]="members_dtl.filters['name']?.value" /> -->
+                <i class="pi pi-search"></i>
+            </span>
+            <!-- Compliant Only Switch -->
+            <div class="flex justify-content-center align-items-center gap-2 mb-3 mr-2 ml-2">
+                <span>Compliant Only</span>
+                <p-inputSwitch inputId="complianceStatusKey" [(ngModel)]="complianceStatusValue" type="boolean" field="complianceStatus" label="Compliant Only"></p-inputSwitch>
+            </div>
+        </div>
+    </ng-template>
+
+        <!-- Paginator will go here by config  -->
+    
+        <ng-template pTemplate="header">
+            <tr>
+                <th field="name">Name</th>
+                <th >Gender</th>
+                <th >DOB</th>
+                <th >City</th> 
+                <th >State</th>
+                <th >Zip</th>
+                <th width="5%">Compliance Status</th>
+                <th >Subscriber Key</th>
+                <th >Member Key </th>
+                <th >Provider Name</th>
+                <th >Provider NPI</th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-member>
+            <tr [pSelectableRow]="member">
+                <td>{{ member.name }}</td>
+                <td>{{ member.gender }}</td> 
+                <td>{{ member.dOB }}</td>
+                <td>{{ member.city }}</td>
+                <td>{{ member.state }}</td>
+                <td>{{ member.zip }}</td>
+                <td><p-tag [value]="member.complianceStatus" [severity]="getSeverity(member.complianceStatus)"></p-tag></td>
+                <td>{{ member.subscriberKey }}</td> 
+                <td>{{ member.memberKey }}</td> 
+                <td>{{ member.providerName }}</td>
+                <td>{{ member.providerNPI }}</td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="4">No member found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
