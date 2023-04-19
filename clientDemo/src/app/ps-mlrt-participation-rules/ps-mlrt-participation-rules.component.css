@@ -7,9 +7,18 @@
     padding-left: 25px;
 }
 
+.table-bordered .table-sub-info:not(:first-child) td, .table-bordered .table-sub-info:not(:first-child) th{
+    border-top: 1px solid #dce2e7!important;
+    border-collapse: collapse;
+}
+
 .table-bordered tr:first-child th, .table-bordered tr:first-child td {
     border-top: 1px solid #dce2e7;
     border-collapse: collapse;
+}
+
+.detailed-Info th, .detailed-Info td {
+    border-top: 1px solid #dce2e7!important;
 }
 
 .table-bordered th {
@@ -41,6 +50,14 @@ td{
     width: 70%;
 }
 
-.shared-rules-table td{
+:host >>>  .p-datatable .p-datatable-tbody > tr > td{
     text-align: center;
+}
+
+:host >>> tr{
+    border-bottom: 2px solid red;
+}
+
+.sub-info:last-child th, .sub-info:last-child td{
+    border-bottom: 1px solid #dce2e7!important;
 }
