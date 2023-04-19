@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,16 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class TrendComponent implements OnInit {
 
   data: any;
-
   options: any;
 
   ngOnInit() {
-      const documentStyle = getComputedStyle(document.documentElement);
-      const textColor = documentStyle.getPropertyValue('--text-color');
-      const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
-      const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
+        const documentStyle = getComputedStyle(document.documentElement);
+        const textColor = documentStyle.getPropertyValue('--text-color');
+        const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
+        const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
       
-      this.data = {
+        this.data = {
           labels: ['Q1 (Jan - Mar)', '02 (Apr - Jun)', 'Q3 (Jul - Sep)', '04 (Oct - Dec)'],
           datasets: [
               {
@@ -52,67 +52,72 @@ export class TrendComponent implements OnInit {
             }
               
           ]
-      };
+        };
 
-      this.options = {
+        this.options = {
+            responsive: true,   
             maintainAspectRatio: false,
-            aspectRatio: 0.8,
+            aspectRatio: 0.5,
             plugins: {
-              legend: {
+                legend: {
                     position: 'top',
-                    labels: {
-                        
+                    labels: {                        
                         color: textColor
                     }
+                    
+                },
+                // layout: {
+                //     padding: 50
+                // }              
             },
-            layout: {
-                padding: 50
-            }
-              
-          },
-          scales: {
-            xAxes: [{
-                barThickness: 5,  // number (pixels) or 'flex'
-                maxBarThickness: 8 // number (pixels)
-            }],              
-            x: {
-                barThickness: 5,  // number (pixels) or 'flex'
-                maxBarThickness: 8, // number (pixels),  
-                ticks: {
-                      color: textColorSecondary,
-                      font: {
-                          weight: 500
-                      }
-                  },
-                  grid: {
-                      color: surfaceBorder,
-                      drawBorder: false
-                  },
-                  title: {
-                    display: true,
-                    text: 'Quality Measure by Stars Earned',
-                  }
-            },
-            y: {
-                  ticks: {
-                      color: textColorSecondary
-                  },
-                  grid: {
-                      color: surfaceBorder,
-                      drawBorder: false
-                  },
-                  title:{ 
-                    display: true,
-                    text: 'Quality Measure Count',
-                    padding: {
-                        top: 10,
-                        bottom: 30
+            scales: 
+            {                       
+                x:
+                {
+                    barThickness: 5,  // number (pixels) or 'flex'
+                    maxBarThickness: 8, // number (pixels),  
+                    ticks: 
+                    {
+                        color: textColorSecondary,
+                        font: {
+                            weight: 500
+                        }
+                    },
+                    grid: 
+                    {
+                        color: surfaceBorder,
+                        drawBorder: false,
+                        display:false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Quality Measure by Stars Earned',
+                    }
+                },
+                y: 
+                {
+                    ticks: 
+                    {
+                        color: textColorSecondary,
+                        beginAtZero: true,
+                    },
+                    grid: 
+                    {
+                        color: surfaceBorder,
+                        drawBorder: false
+                    },
+                    title:
+                    { 
+                        display: true,
+                        text: 'Quality Measure Count',
+                        padding: {
+                            top: 10,
+                            bottom: 30
+                        }
                     }
                 }
-              }
-
-          }
-      };
+            }
+        };
   }
 
 }
