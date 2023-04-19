@@ -1,11 +1,11 @@
-div.member-table *{
+div.member-table * {
     font-size: 10px;    
 }
-/* 
+
 div.member-table {
     margin: 0px 10px 0px 10px;
     padding: 0px 10px 0px 10px;
-} */
+}
 
 ::ng-deep .p-datatable .p-datatable-thead > tr > th {
     text-align: left;
@@ -24,7 +24,6 @@ div.member-table {
     text-align: left;
     border: 1px solid #dee2e6;
     border-width: 0 0 1px 0;
-    padding: 2px;
     font-size: 10px;
 }
 
@@ -40,6 +39,16 @@ div.member-table {
 ::ng-deep div.p-multiselect-label {
     padding: 0px;
 }
+
+.compliance-status-active {
+    background-color: #c4fcc2;
+    padding: 2px 15px;
+}       
+
+.compliance-status-inactive {
+    background-color: #f5a6f6fa;
+    padding: 2px 15px;
+}   
 
 
 

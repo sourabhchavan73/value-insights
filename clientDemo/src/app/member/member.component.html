@@ -8,10 +8,8 @@
         [rowsPerPageOptions]="[5, 10, 25, 50]"
         [paginatorPosition]="'top'"
         currentPageReportTemplate="{totalRecords} Members Found!"
-        [tableStyle]="{ 'min-width': '50rem',  'margin':'20px' }"
+        [tableStyle]="{ 'min-width': '50rem' }"
         styleClass=" 'p-datatable-sm'"
-        [globalFilterFields]="['name']"
-        
     >
     <ng-template pTemplate="caption">
         <div class="flex" style="height: 20px;">
@@ -39,11 +37,11 @@
             </p-columnFilter>
             <!-- Member Search -->
             <span class="mr-2 ml-2">Find a member
-                <input pInputText type="text" (input)="members_dtl.filterGlobal($any($event).target.value, 'contains')"
-                placeholder="Search keyword" />
-                <!-- <input pInputText type="text" placeholder="Find a Member" 
+                <!-- <input pInputText type="text" (input)="members_dtl.filterGlobal($any($event).target.value, 'contains')"
+                placeholder="Search keyword" /> -->
+                <input pInputText type="text" placeholder="Find a Member" 
                         (input)="members_dtl.filter($any($event).target?.value, 'name', 'contains')" 
-                        [value]="members_dtl.filters['name']?.value" /> -->
+                        [value]="$any(members_dtl.filters['name'])?.value" />
                 <i class="pi pi-search"></i>
             </span>
             <!-- Compliant Only Switch -->
@@ -80,7 +78,8 @@
                 <td>{{ member.city }}</td>
                 <td>{{ member.state }}</td>
                 <td>{{ member.zip }}</td>
-                <td><p-tag [value]="member.complianceStatus" [severity]="getSeverity(member.complianceStatus)"></p-tag></td>
+                <!-- <td><p-tag [value]="member.complianceStatus" [severity]="getSeverity(member.complianceStatus)"></p-tag></td> -->
+                <td><span class="{{member.complianceStatus===1? 'compliance-status-active' : 'compliance-status-inactive'}}">{{member.complianceStatus}}</span></td>
                 <td>{{ member.subscriberKey }}</td> 
                 <td>{{ member.memberKey }}</td> 
                 <td>{{ member.providerName }}</td>
