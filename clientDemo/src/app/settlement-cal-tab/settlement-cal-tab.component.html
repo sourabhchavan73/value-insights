@@ -1,0 +1,47 @@
+
+<div class="card">
+    <p-table [value]="customers" sortField="section.name" sortMode="single" dataKey="section.name" rowGroupMode="subheader" groupRowsBy="section.name" [tableStyle]="{'min-width': '70rem'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th id="firsttwoth" style="width:3%">#</th>
+                <th style="width:12%;" id="firsttwoth"><span>Quality Measures</span></th>
+                <th style="width:5%">Compliant Members</th>
+                <th style="width:10%">Compliant Retro Members</th>
+                <th style="width:5%">Star Rating</th>
+                <th style="width:10%">Per Member Payment</th>
+                <th style="width:10%">Previous Star Rating</th>
+                <th style="width:10%">Previous Per Member Payment</th>
+                <th style="width:10%">Current Reconciliation</th>
+                <th style="width:5%">Retroactivity</th>
+                <th style="width:10%">Previous Payment</th>
+                <th style="width:10%">Total Payment</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="groupheader" let-customer let-rowIndex="rowIndex" let-expanded="expanded">
+            <tr>
+                <td colspan="12" style="text-align: left;" id="headSectionth">
+                    <i pButton pRipple [pRowToggler]="customer" class="p-button-text p-button-plain" [icon]="expanded ? 'pi pi-minus' : 'pi pi-plus'"></i>
+                    <span class="spTd">{{customer.section.name}} ({{calculateCustomerTotal(customer.section.name)}})</span>
+                    <span class="tdPartSpan">Part C</span>
+                </td>
+                
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="rowexpansion" let-customer  let-i="rowIndex">
+            <tr>
+                <td>{{i+1}}</td>
+                <td style="text-align: left;">{{customer.qualityMeasures}}</td>
+                <td style="color: #477dd1;">{{customer.compliantMembers}}</td>
+                <td style="color: #477dd1;">{{customer.compliantRetroMembers}}</td>
+                <td>{{customer.starRating}}</td>
+                <td>{{customer.perMemberPayment | currency }}</td>
+                <td>{{customer.previousStarRating}}</td>
+                <td>{{customer.previousPerMemberPayment | currency}}</td>
+                <td>{{customer.currentReconciliation | currency}}</td>
+                <td>{{customer.retroactivity | currency}}</td>
+                <td>{{customer.previousPayment| currency}}</td>
+                <td>{{customer.totalPayment | currency}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

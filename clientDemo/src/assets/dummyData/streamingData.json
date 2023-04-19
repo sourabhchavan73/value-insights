@@ -1,0 +1,183 @@
+[
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 1000,
+        "qualityMeasures": "Breast Cancer Screening",
+        "compliantMembers" : 62,
+        "compliantRetroMembers": 3,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 20.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 20.00
+     },
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 2000,
+        "qualityMeasures": "Colorectal Cancer Screening",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     },
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 2000,
+        "qualityMeasures": "Annual Flu Vaccine",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     },
+
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 2000,
+        "qualityMeasures": "Improving or Maintaining Physical ...",
+        "compliantMembers" : 570,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 50.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 28500.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 28500.00
+     },
+
+     {
+        "section": {
+            "name": "Chronic Conditions"
+        },
+        "id": 2000,
+        "qualityMeasures": "Colorectal Cancer Screening",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     },
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 11000,
+        "qualityMeasures": "Breast Cancer Screening",
+        "compliantMembers" : 62,
+        "compliantRetroMembers": 3,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 20.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 20.00
+     },
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 12000,
+        "qualityMeasures": "Colorectal Cancer Screening",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     },
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 12000,
+        "qualityMeasures": "Annual Flu Vaccine",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     },
+
+
+     {
+        "section": {
+            "name": "Screenings and Tests"
+        },
+        "id": 2000,
+        "qualityMeasures": "Improving or Maintaining Physical ...",
+        "compliantMembers" : 570,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 50.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 28500.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 28500.00
+     },
+
+     {
+        "section": {
+            "name": "Chronic Conditions"
+        },
+        "id": 2000,
+        "qualityMeasures": "Colorectal Cancer Screening",
+        "compliantMembers" : 890,
+        "compliantRetroMembers": -10,
+        "starRating": 3,
+        "perMemberPayment": 10.00,
+        "previousStarRating": 2,
+        "previousPerMemberPayment": 0.00,
+        "currentReconciliation" : 8900.00,
+        "retroactivity": 0.00,
+        "previousPayment" : 0.00,
+        "totalPayment" : 8900.00
+     }
+]

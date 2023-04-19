@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { CdBodyComponent } from './cd-body/cd-body.component';
 import { NavtabComponent } from './navtab/navtab.component';
 import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
+import { SettlementCalTabComponent } from './settlement-cal-tab/settlement-cal-tab.component';
+import { AccordionModule } from 'primeng/accordion';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
     SettlementsComponent,
     PaymentStreamMlrtComponent,
     ContacDetailsMCTComponent,
-    SDCalcComponent
+    SDCalcComponent,
+    SettlementCalTabComponent
 
   ],
   imports: [
@@ -58,6 +61,7 @@ import { SDCalcComponent } from './s-d-calc/s-d-calc.component';
     TabViewModule,
     ChartModule,
     TableModule,
+    AccordionModule
   ],
   providers: [ProductServiceService],
   bootstrap: [AppComponent]

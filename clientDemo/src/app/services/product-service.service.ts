@@ -13,4 +13,8 @@ export class ProductServiceService {
   getPayStreamData():Observable<any>{
     return this.http.get("../../assets/dummyData/payMlrtStream.json")
   }
+
+  getScreeningTests(){
+    return this.http.get("../../assets/dummyData/streamingData.json")
+  }
 }
