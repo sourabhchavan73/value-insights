@@ -63,14 +63,14 @@
 }
 
 .table-label{
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400;
     color: #577b94;
     text-align: left;
 }
 
 .table-value{
-    font-size: 0.99em;
+    font-size: 0.95em;
     color: #000;
 }
 
